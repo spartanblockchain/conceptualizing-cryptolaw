@@ -1,3 +1,10 @@
+// SUDO:
+// front >> API
+// API Handling:
+  // API >> Data - Obj creation, retrieving data, applying contracts
+  // API >> 
+// OBJ << apply contract
+
 App = {
   web3Provider: null,
   contracts: {},
