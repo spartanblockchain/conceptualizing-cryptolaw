@@ -1,29 +1,10 @@
 
-/* 
-
-Dashboard Template 
-http://www.templatemo.com/preview/templatemo_415_dashboard
-
-    1. CSS Imports
-    2. General Styles
-    3. Sidebar
-    4. Charts
-    5. Preferences form
-    6. Sign in form
-    7. tables.html
-    8. Bootstrap overrides
-    9. Maps
-    10. Media Queries
-	
---------------------------------------- */
-
-/* 1. CSS Imports
+/* CSS Imports
 --------------------------------------- */
 @import url('http://fonts.googleapis.com/css?family=Open Sans:300,400,700');
-@import url(font-awesome.min.css);
 @import url(bootstrap.min.css);
 
-/* 2. General Styles
+/* General Styles
 --------------------------------------- */
 * { font-family: 'Open Sans', sans-serif; }
 body { background-color: rgb(235,235,235); }
@@ -37,56 +18,63 @@ h1 { font-size: 24px; }
     font-size: 24px;
     margin: 10px 15px;
 }
-.templatemo-content-wrapper {
+
+/* Content
+--------------------------------------- */
+.content-wrapper {
     float: left;
+    background-color: rgb(11, 26, 49);
     width: 100%;
 }
-.templatemo-content {
+.content {
     margin-left: 235px;
     margin-top: 0px;
     min-height: 600px;
     padding: 25px 20px 0 20px;
-    background-color: white;
     overflow-x: hidden;
 }
-.templatemo-footer {
+.footer {
     clear: both;
     font-size: 13px;
     padding: 8px 0 5px 0;
     text-align: center;
-    color: #ccc;
-    background-color: #333;
+    color: rgba(49, 49, 49, 0.959); 
+    background-color: #6ec0ff;
 }
 .margin-bottom-15 { margin-bottom: 15px; }
 .margin-bottom-30 { margin-bottom: 30px; }
 
-/* 3. Sidebar
+/* Sidebar
 ------------------------------------------------------*/
-#templatemo_search_box {
-    width: 150px;
-    display: inline-block;
-}
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
 }
-.navbar-header { color: rgb(127,127,127); }
-.templatemo-sidebar {
+
+.navbar-inverse {
+    background-color: #6ec0ff;
+}
+
+.navbar-header { 
+    color: rgba(49, 49, 49, 0.959); 
+}
+
+.sidebar {
     padding: 0;
     margin-top: 20px;
 }
-.templatemo-sidebar .templatemo-sidebar-menu {
+.sidebar .sidebar-menu {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.templatemo-sidebar .templatemo-sidebar-menu > li {
+.sidebar .sidebar-menu > li {
     display: block;
     margin: 0;
     padding: 0;
     border: 0px;
 }
-.templatemo-sidebar .templatemo-sidebar-menu > li > a {
+.sidebar .sidebar-menu > li > a {
     display: block;
     position: relative;
     margin: 0;
@@ -96,30 +84,31 @@ h1 { font-size: 24px; }
     font-size: 14px;
     font-weight: 300;    
 }
-.templatemo-sidebar-menu a { color: black; }
-.templatemo-sidebar-menu a:hover { text-decoration: none; }
-.templatemo-sidebar-menu li.sub .templatemo-submenu { display: none; }
-.templatemo-sidebar-menu li.sub.open .templatemo-submenu { display: block; }
-.templatemo-submenu { padding-left: 0; }
-.templatemo-submenu li {
-    list-style: none;
-    background-color: #DFDFDF;
+.sidebar-menu a { 
+    color: rgb(180, 210, 255);
 }
-.templatemo-submenu li a {
+.sidebar-menu a:hover { text-decoration: none; }
+.sidebar-menu li.sub .submenu { display: none; }
+.sidebar-menu li.sub.open .submenu { display: block; }
+.submenu { padding-left: 0; }
+.submenu li {
+    list-style: none;
+    background-color: rgb(11, 26, 49);
+}
+.submenu li a {
     display: block;
     padding: 20px 15px;
     margin: 0;
+    text-align: center;
 }
-.templatemo-sidebar-menu > li.sub.open > a {
-    background-color: rgba(145,145,145,0.3);
-}
-.templatemo-sidebar .templatemo-sidebar-menu >li.active, .templatemo-sidebar .templatemo-sidebar-menu>li>a:hover {
+.sidebar .sidebar-menu >li.active, .sidebar .sidebar-menu>li>a:hover {
     background-color: rgb(191, 232, 167);
 }
-.templatemo-submenu li > a:hover {
+.submenu li > a:hover {
     background-color: rgb(228,228,228);
+    color: rgba(49, 49, 49, 0.959); 
 }
-.templatemo-sidebar .templatemo-sidebar-menu > li > a > i {
+.sidebar .sidebar-menu > li > a > i {
     font-size: 16px;
     top: 2px;
     margin-top: 1px;
@@ -130,39 +119,6 @@ h1 { font-size: 24px; }
     text-align: center;
 }
 
-/* 4. Charts 
---------------------------------------------*/
-.templatemo-chart-box {
-    display: inline-block;
-    text-align: center;
-    padding: 20px 30px 30px 0;
-}
-
-/* 5. Preferences Form
-------------------------------------------*/
-#templatemo-preferences-form {
-    max-width: 960px;
-    margin-bottom: 30px;
-}
-
-/* 6. Sign in Form 
---------------------------------------------*/
-.templatemo-signin-form {
-    padding-top: 50px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-.form-horizontal .form-group {
-    margin-right: 0;
-    margin-left: 0;
-}
-
-/* 7. tables.html
-------------------------------------------*/
-#templatemo_sort_btn { margin-bottom: 20px; }
-
-/* 8. Bootstrap overrides
-----------------------------------------------*/
 .nav-pills>li>a, .nav-tabs>li>a, .alert, .progress, .panel, .btn, .panel-group .panel, .form-control, .modal-content, .breadcrumb {
     border-radius: 0;
 }
@@ -176,18 +132,8 @@ h1 { font-size: 24px; }
 }
 .form-control-feedback { right: 15px; }
 
-/* 9. Maps
-------------------------------------------------------*/
-.jqvmap-zoomin, .jqvmap-zoomout {
-    width: 15px;
-    height: 15px;
-}
-.vmap { height: 400px; }
-
-/* 10. Media Queries
-------------------------------------------------------*/
 @media screen and (min-width: 992px) {
-    .templatemo-sidebar {
+    .sidebar {
         width: 235px;
         float: left;
         position: relative;
@@ -201,26 +147,26 @@ h1 { font-size: 24px; }
     }
     .navbar-header { float: none; }
     .navbar-toggle { display: block; }
-    .templatemo-sidebar {
+    .sidebar {
         border-top: 0 !important;
-        margin: 20px;
+        margin: 0;
     }
-    .templatemo-sidebar.navbar-collapse.collapse {
+    .sidebar.navbar-collapse.collapse {
         display: none !important;
     }
-    .templatemo-sidebar.navbar-collapse.in {
+    .sidebar.navbar-collapse.in {
         border-top: 0 !important;
-        margin: 20px;
+        margin: 0;
         position: relative;
         overflow: hidden !important;
         overflow-y: auto !important;
         display: block !important;
     }
-    .templatemo-content-wrapper { float: none; }
-    .templatemo-content { margin: 0; }
+    .content-wrapper { float: none; }
+    .content { margin: 0; }
 }
 @media screen and (max-width: 767px) {
-    .templatemo-chart-box {
+    .chart-box {
         padding-right: 0;
     }
 }
@@ -237,3 +183,26 @@ ORIGINAL CODE BELOW
 .text-center {
     font-family: 'Scope', 'robotolight',Arial,Helvetica Neue,Helvetica,sans-serif ; 
 }
+
+.content {
+    background-image: url('../images/space-background.jpeg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    align-items: center;
+    display: flex;
+}
+.description{
+    margin: auto;
+}
+.description .powered{
+    font-size: 20px;
+}
+
+
+
+/* https://www.pexels.com/photo/low-angle-view-of-spiral-staircase-against-black-background-247676/ */
