@@ -5,3 +5,6 @@ build/contracts/StoreNames.json
 build/contracts/Migrations.json
 package-lock.json
 .DS_Store
+build/contracts/Adoption.json
+build/contracts/Migrations.json
+build/contracts/StoreNames.json

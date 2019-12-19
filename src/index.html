@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
 
@@ -15,70 +17,74 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link class="googlefont" href="#" rel="stylesheet">
+    <!-- <script src="js/jquery/jquery.min.js"></script> -->
 
   </head>
 
   <body>
-      <header>
-      
-      </header>
-      <div class="navbar navbar-inverse" role="navigation">
-          <div class="navbar-header">
-            <div class="logo"><h1>UCC Financing Statement</h1></div>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button> 
-          </div>   
+    <header class="header">
+        <div class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <div class="logo"><h1>UCC Financing Statement</h1></div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button> 
+            </div>   
         </div>
-        <div class="template-page-wrapper">
-          <div class="navbar-collapse collapse sidebar">
+    </header>
+
+    <main>
+      <div class="template-page-wrapper">
+        <!-- Sidebar -->
+        <div class="navbar-collapse collapse sidebar">
             <ul class="sidebar-menu">              
                 <ul class="submenu">
-                  <lI><a href="#"></i>Home</a></li>
-                  <li><a href="#">Input Statement</a></li>
-                  <!-- <li><a href="#">Pellentesque</a></li> -->
-                  
-                </ul>
-              </li>
-              <!-- <li><a href="javascript:;" data-toggle="modal" data-target="#confirmModal"><i class="fa fa-sign-out"></i>Sign Out</a></li> -->
+                    <lI><a href="index.html"></i>Home</a></li>
+                    <li><a href="input.html">Input Statement</a></li>                  
+                </ul>    
+                <!-- <li><a href="javascript:;" data-toggle="modal" data-target="#confirmModal"><i class="fa fa-sign-out"></i>Sign Out</a></li> -->
             </ul>
-          </div><!--/.navbar-collapse -->
-    
-          <div class="content-wrapper">
-            <div class="content"> 
-              <div class="description"> 
-                <p>EASY, SECURE, FILING STATEMENTS</p> 
-                <p class="powered">powered by blockchain.</p>        
-              </div>      
-            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content-wrapper">
+          <div class="content"> 
+            <div class="description"> 
+              <p>EASY, SECURE, FILING STATEMENTS</p> 
+              <p class="powered">powered by blockchain.</p>        
+            </div>      
           </div>
-          <!-- Modal -->
-          <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Are you sure you want to sign out?</h4>
-                </div>
-                <div class="modal-footer">
-                  <a href="sign-in.html" class="btn btn-primary">Yes</a>
-                  <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                </div>
+        </div>
+
+        <!-- Modal
+        <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Are you sure you want to sign out?</h4>
+              </div>
+              <div class="modal-footer">
+                <a href="sign-in.html" class="btn btn-primary">Yes</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
               </div>
             </div>
           </div>
-          <footer class="footer">
-            <div class="copyright">
-              <p>Copyright &copy; 2017 Spartan Blockchain Solutions</p>
-            </div>
-          </footer>
-        </div>
+        </div> -->
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Footer -->
+      <div class="copyright">
+          <p>Copyright &copy; 2017 Spartan Blockchain Solutions</p>
+      </div> 
+    </footer>
     
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
    <!-- ORIGINAL CODE BELOW -->
     <div class="container">
@@ -88,9 +94,18 @@
         <div class="name"></div>
         <button class="btn-get-name" type="button">Get Stored Name</button>
         <input class="name-input" type="text" placeholder="New Name">
-        <button class="btn-set-name" type="button">Set New Name</button>
+        <button class="btn-register" type="button">Set New Name</button>
       </div>
     </div>
+    
+    <!-- =====================
+      Scripts
+      ======================== -->
+    <script>
+      // $(".header").load("header.html");
+      // $(".footer").load("footer.html");
+      // $(".nav").load("sidebar.html");
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -99,5 +114,7 @@
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
+
   </body>
 </html>
+

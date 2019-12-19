@@ -8,11 +8,16 @@
 --------------------------------------- */
 * { font-family: 'Open Sans', sans-serif; }
 body { background-color: rgb(235,235,235); }
-h1 { font-size: 24px; }
+h1 { 
+    font-size: 18px; 
+    margin-left: 16px;
+}
+
 .btn a {
     color: white;
     text-decoration: none;
 }
+
 .logo { display: inline-block; }
 .logo h1 {
     font-size: 24px;
@@ -26,7 +31,7 @@ h1 { font-size: 24px; }
     background-color: rgb(11, 26, 49);
     width: 100%;
 }
-.content {
+.content, .page-wrapper {
     margin-left: 235px;
     margin-top: 0px;
     min-height: 600px;
@@ -53,6 +58,7 @@ h1 { font-size: 24px; }
 
 .navbar-inverse {
     background-color: #6ec0ff;
+    border-color: #6ec0ff;
 }
 
 .navbar-header { 
@@ -105,7 +111,7 @@ h1 { font-size: 24px; }
     background-color: rgb(191, 232, 167);
 }
 .submenu li > a:hover {
-    background-color: rgb(228,228,228);
+    background-color: #FFF;
     color: rgba(49, 49, 49, 0.959); 
 }
 .sidebar .sidebar-menu > li > a > i {
@@ -122,15 +128,6 @@ h1 { font-size: 24px; }
 .nav-pills>li>a, .nav-tabs>li>a, .alert, .progress, .panel, .btn, .panel-group .panel, .form-control, .modal-content, .breadcrumb {
     border-radius: 0;
 }
-.list-group-item:first-child, .panel-heading {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-.list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-.form-control-feedback { right: 15px; }
 
 @media screen and (min-width: 992px) {
     .sidebar {
@@ -163,8 +160,9 @@ h1 { font-size: 24px; }
         display: block !important;
     }
     .content-wrapper { float: none; }
-    .content { margin: 0; }
+    .content, .page-wrapper { margin: 0; }   
 }
+
 @media screen and (max-width: 767px) {
     .chart-box {
         padding-right: 0;
@@ -183,9 +181,11 @@ ORIGINAL CODE BELOW
 .text-center {
     font-family: 'Scope', 'robotolight',Arial,Helvetica Neue,Helvetica,sans-serif ; 
 }
-
 .content {
     background-image: url('../images/space-background.jpeg');
+}
+
+.content  {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -206,3 +206,5 @@ ORIGINAL CODE BELOW
 
 
 /* https://www.pexels.com/photo/low-angle-view-of-spiral-staircase-against-black-background-247676/ */
+
+
