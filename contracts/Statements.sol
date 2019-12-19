@@ -1,4 +1,5 @@
 pragma solidity ^0.5.0;
+pragma experimental ABIEncoderV2;
 
 contract Statements {
     struct Filer {
@@ -32,6 +33,7 @@ contract Statements {
     }
 
     mapping(uint => Statement) statements;
+    uint numStatements = 0;
 /*
     function newFiler(string filerName, uint filerNumber, string filerEmail) public returns(Filer createdFiler, bool success) {
         Filer createdFiler;
@@ -49,7 +51,7 @@ contract Statements {
         return (createdDebtor, true);
     }*/
 
-    function addStatement(uint statementID, string memory filerName, uint filerNumber, string memory filerEmail,
+    function addStatement(string memory filerName, uint filerNumber, string memory filerEmail,
     address debtorAddress, string memory debtorName, string memory debtorPhysicalAddress,
     address spAddress, string memory spName, string memory spPhysicalAddress,
     string memory collateral, uint collateralUuid) public returns(bool success) {
@@ -73,7 +75,12 @@ contract Statements {
         createdCollateral.collateral = collateral;
         createdCollateral.uuid = collateralUuid;
         //Initialize Statement struct
-        statements[statementID] = Statement(createdFiler, createdDebtor, createdSP, createdCollateral);
+        statements[numStatements] = Statement(createdFiler, createdDebtor, createdSP, createdCollateral);
+        numStatements++;
         return true;
+    }
+
+    function getStatement(uint id) public view returns(Statement memory statement) {
+        return statements[id];
     }
 }
