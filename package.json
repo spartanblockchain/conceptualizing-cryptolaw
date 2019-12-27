@@ -16,6 +16,10 @@
     "lite-server": "^2.3.0"
   },
   "dependencies": {
-    "drizzle": "^1.4.0"
+    "@truffle/contract": "^4.1.3",
+    "drizzle": "^1.4.0",
+    "ipfs-api": "^26.1.2",
+    "ipfs-http-client": "^40.1.0",
+    "truffle": "^5.1.5"
   }
 }
