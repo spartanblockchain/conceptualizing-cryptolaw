@@ -54,7 +54,7 @@ App = {
 
   bindEvents: function() {
     $(document).on('click', '.btn-get-name', App.getStoredName);
-    $(document).on('click', '.btn-set-name', App.handleSetName);
+    $(document).on('click', '.btn-register', App.handleSetName);
   },
   getStoredName: function() {
     var storeNamesInstance;

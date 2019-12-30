@@ -1,0 +1,210 @@
+
+/* CSS Imports
+--------------------------------------- */
+@import url('http://fonts.googleapis.com/css?family=Open Sans:300,400,700');
+@import url(bootstrap.min.css);
+
+/* General Styles
+--------------------------------------- */
+* { font-family: 'Open Sans', sans-serif; }
+body { background-color: rgb(235,235,235); }
+h1 { 
+    font-size: 18px; 
+    margin-left: 16px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo { display: inline-block; }
+.logo h1 {
+    font-size: 24px;
+    margin: 10px 15px;
+}
+
+/* Content
+--------------------------------------- */
+.content-wrapper {
+    float: left;
+    background-color: rgb(11, 26, 49);
+    width: 100%;
+}
+.content, .page-wrapper {
+    margin-left: 235px;
+    margin-top: 0px;
+    min-height: 600px;
+    padding: 25px 20px 0 20px;
+    overflow-x: hidden;
+}
+.footer {
+    clear: both;
+    font-size: 13px;
+    padding: 8px 0 5px 0;
+    text-align: center;
+    color: rgba(49, 49, 49, 0.959); 
+    background-color: #6ec0ff;
+}
+.margin-bottom-15 { margin-bottom: 15px; }
+.margin-bottom-30 { margin-bottom: 30px; }
+
+/* Sidebar
+------------------------------------------------------*/
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-inverse {
+    background-color: #6ec0ff;
+    border-color: #6ec0ff;
+}
+
+.navbar-header { 
+    color: rgba(49, 49, 49, 0.959); 
+}
+
+.sidebar {
+    padding: 0;
+    margin-top: 20px;
+}
+.sidebar .sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar .sidebar-menu > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+}
+.sidebar .sidebar-menu > li > a {
+    display: block;
+    position: relative;
+    margin: 0;
+    border: 0px;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;    
+}
+.sidebar-menu a { 
+    color: rgb(180, 210, 255);
+}
+.sidebar-menu a:hover { text-decoration: none; }
+.sidebar-menu li.sub .submenu { display: none; }
+.sidebar-menu li.sub.open .submenu { display: block; }
+.submenu { padding-left: 0; }
+.submenu li {
+    list-style: none;
+    background-color: rgb(11, 26, 49);
+}
+.submenu li a {
+    display: block;
+    padding: 20px 15px;
+    margin: 0;
+    text-align: center;
+}
+.sidebar .sidebar-menu >li.active, .sidebar .sidebar-menu>li>a:hover {
+    background-color: rgb(191, 232, 167);
+}
+.submenu li > a:hover {
+    background-color: #FFF;
+    color: rgba(49, 49, 49, 0.959); 
+}
+.sidebar .sidebar-menu > li > a > i {
+    font-size: 16px;
+    top: 2px;
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+}
+
+.nav-pills>li>a, .nav-tabs>li>a, .alert, .progress, .panel, .btn, .panel-group .panel, .form-control, .modal-content, .breadcrumb {
+    border-radius: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .sidebar {
+        width: 235px;
+        float: left;
+        position: relative;
+        margin-right: -100%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .navbar-form {
+        padding: 0;
+        margin-left: 0;
+    }
+    .navbar-header { float: none; }
+    .navbar-toggle { display: block; }
+    .sidebar {
+        border-top: 0 !important;
+        margin: 0;
+    }
+    .sidebar.navbar-collapse.collapse {
+        display: none !important;
+    }
+    .sidebar.navbar-collapse.in {
+        border-top: 0 !important;
+        margin: 0;
+        position: relative;
+        overflow: hidden !important;
+        overflow-y: auto !important;
+        display: block !important;
+    }
+    .content-wrapper { float: none; }
+    .content, .page-wrapper { margin: 0; }   
+}
+
+@media screen and (max-width: 767px) {
+    .chart-box {
+        padding-right: 0;
+    }
+}
+
+
+/*
+ORIGINAL CODE BELOW
+*/
+
+/* body {
+    background-color: #b2d2c3;
+} */
+
+.text-center {
+    font-family: 'Scope', 'robotolight',Arial,Helvetica Neue,Helvetica,sans-serif ; 
+}
+.content {
+    background-image: url('../images/space-background.jpeg');
+}
+
+.content  {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    align-items: center;
+    display: flex;
+}
+.description{
+    margin: auto;
+}
+.description .powered{
+    font-size: 20px;
+}
+
+
+
+/* https://www.pexels.com/photo/low-angle-view-of-spiral-staircase-against-black-background-247676/ */
+
+

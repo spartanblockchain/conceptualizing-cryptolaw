@@ -1,58 +1,111 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Pete's Pet Shop</title>
+    
+    <title>UCC Financing Statement</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
 
-    <!-- Bootstrap -->
+    <!-- Styling -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link class="googlefont" href="#" rel="stylesheet">
+    <!-- <script src="js/jquery/jquery.min.js"></script> -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center">Pete's Pet Shop</h1>
-          <hr/>
-          <br/>
-        </div>
-      </div>
 
+  <body>
+    <header class="header">
+        <div class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <div class="logo"><h1>UCC Financing Statement</h1></div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button> 
+            </div>   
+        </div>
+    </header>
+
+    <main>
+      <div class="template-page-wrapper">
+        <!-- Sidebar -->
+        <div class="navbar-collapse collapse sidebar">
+            <ul class="sidebar-menu">              
+                <ul class="submenu">
+                    <lI><a href="index.html"></i>Home</a></li>
+                    <li><a href="input.html">Input Statement</a></li>                  
+                </ul>    
+                <!-- <li><a href="javascript:;" data-toggle="modal" data-target="#confirmModal"><i class="fa fa-sign-out"></i>Sign Out</a></li> -->
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="content-wrapper">
+          <div class="content"> 
+            <div class="description"> 
+              <p>EASY, SECURE, FILING STATEMENTS</p> 
+              <p class="powered">powered by blockchain.</p>        
+            </div>      
+          </div>
+        </div>
+
+        <!-- Modal
+        <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Are you sure you want to sign out?</h4>
+              </div>
+              <div class="modal-footer">
+                <a href="sign-in.html" class="btn btn-primary">Yes</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- Footer -->
+      <div class="copyright">
+          <p>Copyright &copy; 2017 Spartan Blockchain Solutions</p>
+      </div> 
+    </footer>
+    
+    <script src="js/bootstrap.min.js"></script>
+
+   <!-- ORIGINAL CODE BELOW -->
+    <div class="container">
       <div id="petsRow" class="row">
         <!-- PETS LOAD HERE -->
+        <!-- Store Names Front End Code -->
         <div class="name"></div>
         <button class="btn-get-name" type="button">Get Stored Name</button>
         <input class="name-input" type="text" placeholder="New Name">
-        <button class="btn-set-name" type="button">Set New Name</button>
+        <button class="btn-register" type="button">Set New Name</button>
       </div>
     </div>
-
-    <div id="petTemplate" style="display: none;">
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="panel panel-default panel-pet">
-          <div class="panel-heading">
-            <h3 class="panel-title">Scrappy</h3>
-          </div>
-          <div class="panel-body">
-            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
-            <br/><br/>
-            <strong>Breed</strong>: <span class="pet-breed">Golden Retriever</span><br/>
-            <strong>Age</strong>: <span class="pet-age">3</span><br/>
-            <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
-            <button class="btn btn-default btn-adopt" type="button" data-id="0">Adopt</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    <!-- =====================
+      Scripts
+      ======================== -->
+    <script>
+      // $(".header").load("header.html");
+      // $(".footer").load("footer.html");
+      // $(".nav").load("sidebar.html");
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -61,5 +114,7 @@
     <script src="js/web3.min.js"></script>
     <script src="js/truffle-contract.js"></script>
     <script src="js/app.js"></script>
+
   </body>
 </html>
+

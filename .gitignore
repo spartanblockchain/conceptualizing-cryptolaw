@@ -1,2 +1,8 @@
 #ignore node_modules folder
 node_modules/
+build/
+package-lock.json
+.DS_Store
+build/contracts/Adoption.json
+build/contracts/Migrations.json
+build/contracts/StoreNames.json
