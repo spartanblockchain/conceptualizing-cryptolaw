@@ -3,13 +3,13 @@ const IPFS = require('ipfs-api');
 const ipfs = new IPFS('localhost', '5001', {protocol: 'http'});
 const Web3 = require('web3');
 const contract = require('@truffle/contract');
-const statementsContractJSON = require('../../build/contracts/Statements.json');
 
-function initWeb3() {
+function initWeb3(statementsContractPath) {
     //Set web3 provider
     const web3Provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');
     const web3 = new Web3(web3Provider);
     //Setup contract
+    const statementsContractJSON = require(statementsContractPath);
     const statementsContract = contract(statementsContractJSON);
     statementsContract.setProvider(web3Provider);
 
@@ -17,9 +17,9 @@ function initWeb3() {
 }
 
 module.exports = {
-    store: function(file) {
+    store: function(file, statementsContractPath) {
         //Init web3
-        const [web3, statementsContract] = initWeb3();
+        const [web3, statementsContract] = initWeb3(statementsContractPath);
         //Get users eth account from provider
         web3.eth.getAccounts((err, accounts) => {
             const account = accounts[0];
@@ -53,9 +53,9 @@ module.exports = {
         });
     },
     
-    retrieve: function() {
+    retrieve: function(statementsContractPath) {
         //Init web3
-        const [web3, statementsContract] = initWeb3();
+        const [web3, statementsContract] = initWeb3(statementsContractPath);
         //Get users stored hash from smart contract
         web3.eth.getAccounts((err, accounts) => {
             if (!err) {
