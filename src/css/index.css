@@ -31,7 +31,7 @@ h1 {
     background-color: rgb(11, 26, 49);
     width: 100%;
 }
-.content, .page-wrapper {
+.content, .page-wrapper, .bit-wrapper, .search-content{
     margin-left: 235px;
     margin-top: 0px;
     min-height: 600px;
@@ -160,7 +160,7 @@ h1 {
         display: block !important;
     }
     .content-wrapper { float: none; }
-    .content, .page-wrapper { margin: 0; }   
+    .content, .page-wrapper, .bit-wrapper, .search-content { margin: 0; }   
 }
 
 @media screen and (max-width: 767px) {
@@ -170,14 +170,6 @@ h1 {
 }
 
 
-/*
-ORIGINAL CODE BELOW
-*/
-
-/* body {
-    background-color: #b2d2c3;
-} */
-
 .text-center {
     font-family: 'Scope', 'robotolight',Arial,Helvetica Neue,Helvetica,sans-serif ; 
 }
@@ -185,7 +177,14 @@ ORIGINAL CODE BELOW
     background-image: url('../images/space-background.jpeg');
 }
 
-.content  {
+.bit-wrapper {
+    background-image: url('../images/bits-world.jpg');
+}
+.search-content{
+    background-image: url('../images/bits-background.jpg');
+}
+
+.content, .bit-wrapper, .search-content {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;

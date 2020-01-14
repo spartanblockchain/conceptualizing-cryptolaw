@@ -239,7 +239,7 @@ fieldset {
       display: block !important;
   }
   .content-wrapper { float: none; }
-  .content, .page-wrapper { margin: 0; }   
+  .content, .page-wrapper, .bit-wrapper { margin: 0; }   
 }
 
 @media screen and (max-width: 767px) {
@@ -247,3 +247,6 @@ fieldset {
       padding-right: 0;
   }
 }
+
+
+/*  https://codepen.io/colorlib/pen/KVoZyv */

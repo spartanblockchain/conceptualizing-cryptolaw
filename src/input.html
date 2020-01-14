@@ -38,36 +38,54 @@
                 <ul class="sidebar-menu">              
                     <ul class="submenu">
                         <lI><a href="index.html"></i>Home</a></li>
-                        <li><a href="input.html">Input Statement</a></li>                  
+                        <li><a href="input.html">Input Statement</a></li>  
+                        <li><a href="search.html">Search</a></li>                                  
                     </ul>    
-                    <!-- <li><a href="javascript:;" data-toggle="modal" data-target="#confirmModal"><i class="fa fa-sign-out"></i>Sign Out</a></li> -->
                 </ul>
             </div>
             <div class="content-wrapper">
                 <div class="page-wrapper">
                     <div class="container">  
-                        <form id="contact" action="" method="post">
+                        <form id="contact" action="post-input.php" method="post">
                           <h3>Financial Statement Form</h3>
                           <h4>Filer Details</h4>
                           <fieldset>
-                            <input placeholder="First name" type="text" tabindex="1" required autofocus>
+                            <input name="first" placeholder="First Name" type="text" tabindex="1" required autofocus>
                           </fieldset>
                           <fieldset>
-                            <input placeholder="Last Name" type="text" tabindex="2" required>
+                            <input name="last" placeholder="Last Name" type="text" tabindex="2" required>
                           </fieldset>
                           <fieldset>
-                            <input placeholder="Email Address" type="email" tabindex="3" required>
+                            <input name="email" placeholder="Email Address" type="email" tabindex="3" required>
                           </fieldset>
                           <fieldset>
-                            <input placeholder="Phone Number" type="tel" tabindex="4" required>
+                            <input name="number" placeholder="Phone Number" type="tel" tabindex="4" required>
                           </fieldset>
                           
                           <fieldset>
-                            <textarea placeholder="Collateral Description" tabindex="5" required></textarea>
+                            <textarea name="collateral" placeholder="Collateral Description" tabindex="5" required></textarea>
                           </fieldset>
+                        
+                          <h4>Debtor</h4>
+                          <fieldset>
+                            <input name="debtor-name" placeholder="Name" type="text" tabindex="6" required>
+                          </fieldset>
+                          <fieldset>
+                            <input name="debtor-address" placeholder="Address" type="text" tabindex="7" required>
+                          </fieldset>
+
+                          <h4>Secured Party</h4>
+                          <fieldset>
+                            <input name="secured-name" placeholder="Name" type="text" tabindex="8" required>
+                          </fieldset>
+                          <fieldset>
+                            <input name="secured-address" placeholder="Address" type="text" tabindex="9" required>
+                          </fieldset>
+
                           <fieldset>
                             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                           </fieldset>
+
                         </form>
                       </div>
                 </div>
@@ -81,14 +99,15 @@
         </footer>
     </main>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/web3.min.js"></script>
-    <script src="js/truffle-contract.js"></script>
-    <script src="js/app.js"></script>
-
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Other JS Files -->
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/form-input.js"></script>
+     <script src="js/web3.min.js"></script>
+     <script src="js/truffle-contract.js"></script>
+     <script src="js/app.js"></script>
+   
 </body>
 
 </html>
